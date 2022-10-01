@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <title>Cadastro de Clientes</title>
-    <link rel="stylesheet" href="/stylesheets/style.css"/>
+    <script type="text/javascript" src="cliente.js"></script> 
 </head>
 <body>
     <h1>Cadastro de Clientes</h1>
     <p>Preencha os dados abaixo para salvar o cliente.</p>
     <form action="/new" method="POST">
         <p>
-            <label>Nome: <input type="text" name="nome" /></label>
+            <label>Razão Social: <input type="text" name="razaoSocial" /></label>
         </p>
         <p>
-            <label>Idade: <input type="number" name="idade" /></label>
+            <label>Cnpj: <input type="number" name="cnpj" /></label>
         </p>
         <p>
+            <label>Endereço: <input type="text" name="endereco" /></label>
+            <label>Número: <input type="number" name="numero" /></label>
+        </p>
+        <p>
+            
+        <p>
+            <label>Bairro: <input type="text" name="bairro" /></label>
+        </p>
+        <p>
+            <label>Cep: <input type="number" name="cep" /></label>
+        </p>    
             <label>UF:
                 <select name="UF">
                     <option>AC</option>
