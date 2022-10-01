@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+</head>
+<body>
+    <h1>Cadastro de Clientes</h1>
+    <p>Preencha os dados abaixo para salvar o cliente.</p>
+    <form action="/new" method="POST">
+        <p>
+            <label>Nome: <input type="text" name="nome" /></label>
+        </p>
+        <p>
+            <label>Idade: <input type="number" name="idade" /></label>
+        </p>
+        <p>
+            <label>UF:
+                <select name="UF">
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>
+                </select>     
+            </label>
+        </p>
+        <p>
+            <a href="/">Cancelar</a> | <input type="submit" value="Salvar" />
+        </p>
+    </form>
+</body>
+</html>
