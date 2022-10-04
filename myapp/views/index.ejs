@@ -5,62 +5,19 @@
     <link rel="stylesheet" href="/stylesheets/style.css" /> 
 </head>
 <body>
-    <h1>%= title %</h1>
+    <h1>Cadastro de Clientes</h1>
     <p>Preencha os dados abaixo para salvar o cliente. </p>
     <form action="/new" method="POST">
-        <p>
-            <label>Razão Social: <input type="text" name="razaoSocial" /></label>
-        </p>
-        <p>
-            <label>Cnpj: <input type="number" name="cnpj" /></label>
-        </p>
-        <p>
-            <label>Endereço: <input type="text" name="endereco" /></label>
-            <label>Número: <input type="number" name="numero" /></label>
-        </p>
-        <p>
-            
-        <p>
-            <label>Bairro: <input type="text" name="bairro" /></label>
-        </p>
-        <p>
-            <label>Cep: <input type="number" name="cep" /></label>
-        </p>    
-            <label>UF:
-                <select name="UF">
-                    <option>AC</option>
-                    <option>AL</option>
-                    <option>AP</option>
-                    <option>AM</option>
-                    <option>BA</option>
-                    <option>CE</option>
-                    <option>DF</option>
-                    <option>ES</option>
-                    <option>GO</option>
-                    <option>MA</option>
-                    <option>MT</option>
-                    <option>MS</option>
-                    <option>MG</option>
-                    <option>PA</option>
-                    <option>PB</option>
-                    <option>PR</option>
-                    <option>PE</option>
-                    <option>PI</option>
-                    <option>RJ</option>
-                    <option>RN</option>
-                    <option>RS</option>
-                    <option>RO</option>
-                    <option>RR</option>
-                    <option>SC</option>
-                    <option>SP</option>
-                    <option>SE</option>
-                    <option>TO</option>
-                </select>     
-            </label>
-        </p>
-        <p>
-            <a href="/">Cancelar</a> | <input type="submit" value="Salvar" />
-        </p>
+
+
+      Código:<input type="text" id="cod" size="10"/>
+      Descrição:<input type="text" id="desc" size="40"/>
+      Preço:<input type="text" id="prec" size="10"/>
+      <input type="submit" value="Inserir" ondblclick="inserir()" /></body><br>
+
+      <h2>Lista de Produtos</h2>
+      <div id="tabela"></div>
+
     </form>
 </body>
 </html>
