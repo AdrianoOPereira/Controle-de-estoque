@@ -1,66 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<cabeça>
-    <título>Cadastro de Clientes</título>
-    <tipo de script="texto/javascript" src="cliente.js"></script> 
-</cabeça>
-<corpo>
-    <h1>Cadastro de Clientes</h1>
+<html>
+<head>
+    <title>GURD de Clientes</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" /> 
+</head>
+<body>
+    <h1>Cadastro de Fornecedores</h1>
     <p>Preencha os dados abaixo para salvar o cliente. </p>
-    <formulário action="/new" método="POST">
+    <form action="/new" method="POST">
         <p>
-            <rótulo>Razão Social: <input type="text" name="razaoSocial" /></label>
+            <label>Razão Social: <input type="text" name="razaoSocial" /></label>
         </p>
         <p>
-            <rótulo>Cnpj: <input type="number" name="cnpj" /></label>
+            <label>Cnpj: <input type="number" name="cnpj" /></label>
         </p>
         <p>
-            <rótulo>Endereço: <input type="text" name="endereco" /></label>
-            <rótulo>Número: <input type="number" name="numero" /></label>
+            <label>Endereço: <input type="text" name="endereco" /></label>
+        </p>
+        <p>    
+            <label>Número: <input type="number" name="numero" /></label>
+        </p>
+        <p>    
+            <label>Complemento: <input type="text" name="complemento" /></label>
+        </p>
+        <p>    
+            <label>Cep: <input type="number" name="cep" /></label>
+        </p>
+        <p>    
+            <label>Bairro: <input type="text" name="bairro" /></label>
+        </p>
+        <p>    
+            <label>Telefone: <input type="text" name="telefone" /></label>    
         </p>
         <p>
-            
-        <p>
-            <rótulo>Bairro: <input type="text" name="bairro" /></label>
+            <label>Inscrição Municipal: <input type="number" name="inscricaoMunicipal" /></label>
         </p>
-        <p>
-            <rótulo>Cep: <input type="number" name="cep" /></label>
+        <p>    
+            <label>Inscrição Estadual: <input type="number" name="inscricaoEstadual" /></label>
+        </p>
+        <p>    
+            <label>E-mail: <input type="text" name="e-mail" /></label>
+        </p>
+        <p>    
+            <label>Cidade: <input type="text" name="cidade" /></label>
         </p>    
-            <rótulo>UF:
-                <selecionar nome="UF">
-                    <opção>AC</opção>
-                    <opção>AL</opção>
-                    <opção>AP</opção>
-                    <opção>AM</opção>
-                    <opção>BA</opção>
-                    <opção>CE</opção>
-                    <opção>DF</opção>
-                    <opção>ES</opção>
-                    <opção>GO</opção>
-                    <opção>MA</opção>
-                    <opção>MT</opção>
-                    <opção>MS</opção>
-                    <opção>MG</opção>
-                    <opção>PA</opção>
-                    <opção>PB</opção>
-                    <opção>PR</opção>
-                    <opção>PE</opção>
-                    <opção>PI</opção>
-                    <opção>RJ</opção>
-                    <opção>RN</opção>
-                    <opção>RS</opção>
-                    <opção>RO</opção>
-                    <opção>RR</opção>
-                    <opção>SC</opção>
-                    <opção>SP</opção>
-                    <opção>SE</opção>
-                    <opção>TO</opção>
-                </selecionar>     
-            </etiqueta>
+            <label>UF:
+                <select name="UF">
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>
+                </select>     
+            </label>
         </p>
         <p>
-            <a href="/">Cancelar</a> | <inpute tipo="enviar" valor="Salvar" />
+            <a href="/">Cancelar</a> | <input type="submit" value="Salvar" />
         </p>
-    </forma>
-</corpo>
+    </form>
+</body>
 </html>
